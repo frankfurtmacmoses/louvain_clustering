@@ -1,9 +1,9 @@
 # louvain_clustering
-##What is the Louvain Method?
+## What is the Louvain Method?
 Louvain clustering algorithm is network clustering belonging to Partition Clustering Approach
 The Louvain Method is an algorithm for finding communities in a network (or graph). A community is a group of nodes (like people, websites, or computers) that are more closely connected to each other than to nodes in other groups.
-How Does it Work?
-Start with the Graph:
+## How Does it Work?
+### Start with the Graph:
 Imagine you have a network (graph) of nodes connected by edges. Each edge might have a weight, showing how strong the connection is (e.g., a friendship strength).
 Step 1: Assign Each Node to Its Own Community:
 In the beginning, every node is its own community. So, if there are 10 nodes, there are 10 communities.
@@ -22,7 +22,7 @@ The process stops when the modularity score cannot improve anymore.
 Final Output:
 You end up with a set of communities, where each community contains nodes that are more connected to each other than to nodes in other communities.
 Simple Example
-Let’s say you have a network of friends, where:
+### Let’s say you have a network of friends, where:
 Nodes = people.
 Edges = strength of their friendship.
 Initial Setup:
