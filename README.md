@@ -5,19 +5,19 @@ The Louvain Method is an algorithm for finding communities in a network (or grap
 ## How Does it Work?
 ### Start with the Graph:
 Imagine you have a network (graph) of nodes connected by edges. Each edge might have a weight, showing how strong the connection is (e.g., a friendship strength).
-Step 1: Assign Each Node to Its Own Community:
+- Step 1: Assign Each Node to Its Own Community:
 In the beginning, every node is its own community. So, if there are 10 nodes, there are 10 communities.
-Step 2: Merge Communities to Maximize Modularity:
+- Step 2: Merge Communities to Maximize Modularity:
 Modularity is a score that measures how good a division of the graph is. It checks:
 Are nodes in the same community highly connected?
 Are nodes in different communities less connected?
 The algorithm tries to move each node into a neighboring community (one it’s connected to) if it improves the modularity.
 This step is repeated until no further improvement is possible.
-Step 3: Build a New Graph with Communities as Nodes:
+- Step 3: Build a New Graph with Communities as Nodes:
 After Step 2, each community becomes a single node in a new graph.
 The edges between these new nodes are based on the total weight of connections between the communities.
-Step 4: Repeat the Process:
-Steps 2 and 3 are repeated on the new graph. Each iteration reduces the number of communities further.
+- Step 4: Repeat the Process:
+#### Steps 2 and 3 are repeated on the new graph. Each iteration reduces the number of communities further.
 The process stops when the modularity score cannot improve anymore.
 Final Output:
 You end up with a set of communities, where each community contains nodes that are more connected to each other than to nodes in other communities.
