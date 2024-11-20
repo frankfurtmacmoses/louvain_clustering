@@ -44,3 +44,4 @@ The algorithm works in two main steps:
 Optimize modularity locally.
 Aggregate nodes into communities and repeat.
 
+# Data Source used: https://kdd.ics.uci.edu/databases/kddcup99/kddcup.data.gz
